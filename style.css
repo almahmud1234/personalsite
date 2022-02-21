@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a{
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+[class*="col-"]{
+
+    float: left;
+    padding: 10px;
+}
+
+/*for mobile*/
+[class*="col-"]{
+    width:100%;
+}
+
+/*navbar design starts here*/
+
+.navbar{
+    background-color: #0c6168;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navbar h1{
+    color: aliceblue;
+    margin: 0;
+    padding-top: 10px;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navbar-menu{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.navbar-menu a:hover{
+     background-color: gray;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*navbar end*/
+/* profile design starts here */
+
+.profile{
+    padding: 130px 10px;
+    text-align: center;
+}
+.profile-desc h1{
+    font-family: 'satisfy',cursive;
+    font-size: 3rem;
+}
+.profile-desc p{
+    color: gray;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile design ends here */
+
+
+/* about me design starts here */
+
+.about-me{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'montserrat',sans-serif;
+}
+
+.aboutme-image img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height:220px;
+    width:200px;
+}
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    font-size: 1.2rem;  
+}
+
+.about-me::after{
+    clear: both;
+    display:table;
+    content:'';
+}
+
+/* about me design starts here */
+
+/* professional experiences starts here */
+
+.professional-experience{
+    padding: 1% 0%;
+
+}
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    /* height: 700px; */
+}
+.professional-experience .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+.card-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.skills-container{
+    padding-right: 45px;
+
+}
+.skills-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(86,86,153,.5);
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.skills-container li.html::after{
+    animation-name: html
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: rgb(86,86,153,.5);
+    border-radius: 1000px;
+}
+
+
+
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content:'';
+}
+/* professional experiences starts here */
+
+/* achievement-contact starts here */
+
+.achievement-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: aliceblue;
+}
+.contact{
+    padding: 1% 7%;
+    text-align: center;
+}
+.contact input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+.achievement-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+/* achievement-contact ends here */
+
